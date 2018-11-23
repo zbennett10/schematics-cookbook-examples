@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "CookbookComponent",
+    "title": "Cookbook Component",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Component name",
+        "$default": {
+          "$source": "argv",
+          "index": 0
+        }
+      },
+      "service": {
+        "description": "Does this component need a side-car service?",
+        "type": "boolean",
+        "default": false,
+        "alias": "s"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  }
+  
