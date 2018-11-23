@@ -1,8 +1,8 @@
 # schematics-cookbook-examples
 
-The point of this repo is to showcase the schematic collection that we walkthrough in my [book][https://github.com/zbennett10/schematics-cookbook-examples.git]
+The point of this repo is to showcase the schematic collection that we walkthrough in my [book](https://github.com/zbennett10/schematics-cookbook-examples.git)
 
-You can buy the e-book [here][google.com]!
+You can buy the e-book [here](google.com)!
 
 ### Testing
 
