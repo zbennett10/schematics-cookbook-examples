@@ -1,9 +1,14 @@
 {
     "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
     "schematics": {
-        "cookbook-component": {
+      "cookbook-component": {
         "description": "Generates a cookbook Angular component",
         "factory": "./cookbook-component/index#cookbookComponent"
-        }
+      },
+      "node-api": {
+        "aliases": [ "api" ],
+        "description": "Generates a new Node API.",
+        "factory": "./node-api/index#nodeApi"
     }
+  }
 }
