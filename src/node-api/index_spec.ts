@@ -10,7 +10,7 @@ describe('node-api', () => {
             tree = runner.runSchematic('node-api', { name: 'test-app' }),
        { files } = tree;
 
-    expect(files.length).toBe(12);
+    expect(files.length).toBe(11);
   });
 
   it('runs successfully via the "api" alias', () => {
@@ -18,7 +18,7 @@ describe('node-api', () => {
             tree = runner.runSchematic('api', { name: 'test-app' }),
        { files } = tree;
 
-    expect(files.length).toBe(12);
+    expect(files.length).toBe(11);
   });
 
   it('templates boilerplate files with the correct name', () => {
@@ -27,7 +27,6 @@ describe('node-api', () => {
             tree = runner.runSchematic('api', { name }),
        filePaths = [
           `/${name}/package.json`,
-          `/${name}/package-lock.json`,
           `/${name}/README.md`
         ];
 
@@ -46,7 +45,6 @@ describe('node-api', () => {
        { files } = tree,
        filePaths = [
           `${directory}/${name}/package.json`,
-          `${directory}/${name}/package-lock.json`,
           `${directory}/${name}/README.md`,
           `${directory}/${name}/src/server.ts`,
           `${directory}/${name}/src/routes.ts`,
