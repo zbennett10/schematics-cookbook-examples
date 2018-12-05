@@ -10,7 +10,7 @@ describe('node-api', () => {
             tree = runner.runSchematic('node-api', { name: 'test-app' }),
        { files } = tree;
 
-    expect(files.length).toBe(11);
+    expect(files.length).toBe(9);
   });
 
   it('runs successfully via the "api" alias', () => {
@@ -18,7 +18,7 @@ describe('node-api', () => {
             tree = runner.runSchematic('api', { name: 'test-app' }),
        { files } = tree;
 
-    expect(files.length).toBe(11);
+    expect(files.length).toBe(9);
   });
 
   it('templates boilerplate files with the correct name', () => {
