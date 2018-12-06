@@ -33,7 +33,6 @@ describe('cookbook-component schematic', () => {
     };
 
     const tree = cookbookRunner.runSchematic('cookbook-component', options, angularApplicationTree);
-    console.log(tree.files);
 
     expect(tree.files.indexOf(
       `/test-app-root/${appOptions.name}/src/app/${options.name}/${options.name}.service.ts`
