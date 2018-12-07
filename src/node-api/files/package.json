@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "Enter your description here.",
   "scripts": {
-    "start": "npm run build && node dist/server.js",
+    "start": "npm run build && npm run copy-mock && node dist/server.js",
     "dev": "ts-node-dev --respawn --transpileOnly --ignore-watch node_modules src/server.ts",
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "copy-mock": "shx mkdir dist/mock/ && shx cp src/mock/books.json dist/mock/books.json"
   },
   "author": "",
   "license": "MIT",
@@ -25,9 +26,10 @@
     "@types/node": "^10.12.10",
     "@types/request-promise-native": "1.0.15",
     "@types/winston": "^2.4.4",
-    "ts-node-dev": "^1.0.0-pre.30",
     "fs-extra": "^1.0.0",
     "jasmine": "3.1.0",
+    "shx": "^0.3.2",
+    "ts-node-dev": "^1.0.0-pre.30",
     "typescript": "^3.1.6"
   }
 }
